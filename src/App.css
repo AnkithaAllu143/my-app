@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f0ff, #ffffff);
+}
+
+.app {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.counter-section,
+.list-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.counter-controls button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 2px solid #007bff;
+  background: white;
+  color: #007bff;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.counter-controls button:hover {
+  background: #eef6ff;
+}
+
+.counter-value {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background: #005fcc;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reset-button,
+.sort-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: 0.2s;
+}
+
+.reset-button {
+  color: red;
+  border-color: red;
+  background: #ffe5e5;
+}
+
+.reset-button:hover {
+  background: #ffcccc;
+}
+
+.sort-button {
+  color: #007bff;
+  border-color: #007bff;
+  background: #eef6ff;
+}
+
+.sort-button:hover {
+  background: #d0eaff;
+}
+
+.numbers-container {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.number-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f3f3f3;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.number-item button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+}
+
+.number-item button:hover {
+  color: red;
+}
+
+.total-count {
+  text-align: right;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+}
